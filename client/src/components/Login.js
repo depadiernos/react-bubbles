@@ -32,6 +32,7 @@ const Login = (props) => {
   return (
     <>
       <h1>Welcome to the Bubble App!</h1>
+      {error && <div className='delete'>{`${error}`}</div>}
       <form onSubmit={handleSubmit}>
         <input
           type="text"
