@@ -11,7 +11,7 @@ export default function PrivateRoute(props) {
         if (getToken()) {
           return <Component {...componentProps} />;
         } else {
-          return <Redirect to="/login" />;
+          return <Redirect to="/" />;
         }
       }}
     />
