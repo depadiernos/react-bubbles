@@ -25,7 +25,7 @@ const Login = (props) => {
       .then(res => {
         setToken(res.data.payload)
         setCredentials(defaultCredentials)
-        props.history.push('/')
+        props.history.push('/bubbles')
       })
       .catch(err => setError(err));
   };
